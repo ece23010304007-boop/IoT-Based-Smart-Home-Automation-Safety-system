@@ -1,3 +1,49 @@
+# IoT-Based Temperature and Humidity Monitoring System
+
+A real-time IoT-based environmental monitoring system powered by an **ESP32 microcontroller** and **DHT11 sensor**, designed to track ambient temperature and humidity seamlessly via the **Blynk IoT platform**.
+
+---
+
+## 🚀 Features
+* **Real-Time Environmental Tracking:** Continuous monitoring of ambient temperature and humidity values.
+* **Cloud Integration:** Live data synchronization and visualization on the Blynk Console dashboard.
+* **Remote Monitoring:** Access environmental metrics from anywhere using the Blynk mobile/web application.
+* **Interactive Dashboard:** Visual gauge widgets displaying live values for precise tracking.
+
+---
+
+## 🛠️ Hardware Components
+1. **ESP32 Microcontroller Module** (Wi-Fi enabled)
+2. **DHT11 Sensor** (Temperature & Humidity Sensor)
+3. **Connecting Wires & Breadboard**
+4. **Micro-USB Cable** (for programming and power supply)
+
+---
+
+## 💻 Software & Cloud Platform
+* **Arduino IDE** (for compiling and uploading firmware)
+* **Blynk IoT Cloud Console** (for setting up the dashboard and gauges)
+* **Required Libraries:**
+  * `WiFi.h`
+  * `BlynkSimpleEsp32.h`
+  * `DHT.h`
+
+---
+
+## 📊 Blynk Dashboard Preview
+* The Blynk Console displays real-time circular gauge metrics for both **Temperature (°C)** and **Humidity (%)**.
+* Data updates dynamically as environmental conditions change.
+
+---
+
+## 📄 Repository Structure
+* `/firmware/` - Contains the source code files (`.ino`) for the ESP32.
+* `/assets/` - Contains Blynk dashboard screenshots and system visual references.
+
+---
+
+Project code
+
 /************************************************
    IoT Smart Temperature & Humidity Monitoring
    ESP8266 + DHT11 + Servo + Relay + Blynk
