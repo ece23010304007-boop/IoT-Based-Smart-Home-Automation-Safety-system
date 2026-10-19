@@ -1,3 +1,49 @@
+# IoT-Based Smart Home Environmental Monitoring and Gas Safety System
+
+An advanced IoT-based safety and environmental monitoring system powered by an **ESP32 microcontroller**, designed to track ambient temperature/humidity and detect hazardous gas or smoke leaks in real-time via the **Blynk IoT platform**.
+
+---
+
+##  Features
+* **Hazard & Gas Detection:** Real-time monitoring of smoke, LPG, and flammable gases using the MQ-2 sensor to prevent fire accidents.
+* **Environmental Tracking:** Continuous tracking of ambient temperature and humidity using the DHT11 sensor.
+* **Cloud Integration:** Live data synchronization and visualization on the Blynk Console dashboard.
+* **Instant Alerts & Monitoring:** Remote access to sensor parameters from anywhere using the Blynk mobile/web application.
+
+---
+
+##  Hardware Components
+1. **ESP32 Microcontroller Module** (Wi-Fi enabled)
+2. **MQ-2 Gas / Smoke Sensor** (for safety and leak detection)
+3. **DHT11 Sensor** (for temperature and humidity monitoring)
+4. **Connecting Wires & Breadboard**
+5. **Power Supply / USB Cable**
+
+---
+
+##  Software & Cloud Platform
+* **Arduino IDE** (for compiling and uploading firmware)
+* **Blynk IoT Cloud Console** (for setting up gauges and hazard alerts)
+* **Required Libraries:**
+  * `WiFi.h`
+  * `BlynkSimpleEsp32.h`
+  * `DHT.h`
+
+---
+
+##  Blynk Dashboard Preview
+* Real-time metrics display current **Temperature (°C)** and **Humidity (%)**.
+* Gas sensor monitoring status displayed dynamically on the cloud console.
+
+---
+
+## 📄 Repository Structure
+* `/firmware/` - Contains the source code files (`.ino`) for the ESP32.
+* `/assets/` - Contains Blynk dashboard screenshots and circuit references.
+
+---
+Project code
+
 #include <Arduino.h>
 #include <ESP8266WiFi.h>
 #include <FirebaseESP8266.h>
